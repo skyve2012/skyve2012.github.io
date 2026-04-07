@@ -1,0 +1,12 @@
+github_users:
+  - skyve2012
+
+repo_description_lines_max: 2
+
+github_repos:
+  - skyve2012/AutoAgentClaw
+  - skyve2012/G2M
+  - skyve2012/DBA
+  - skyve2012/DenoisingGW
+  - skyve2012/GW_PostNF
+  - skyve2012/BayesianNetTutorial
