@@ -84,13 +84,6 @@ ninja.data = [{
           window.open("/assets/pdf/CV_HS_2026.pdf", "_blank");
         },
       },{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%68%6F%6E%67%79%75%73@%61%6D%61%7A%6F%6E.%63%6F%6D", "_blank");
-        },
-      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
