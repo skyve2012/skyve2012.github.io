@@ -10,7 +10,6 @@ profile:
   image_circular: false
   more_info: >
     <p>Seattle, WA</p>
-    <p>hongyus@amazon.com</p>
 
 selected_papers: true
 social: true

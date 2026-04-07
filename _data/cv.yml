@@ -1,7 +1,7 @@
 cv:
   name: Hongyu Shen
   label: Applied Scientist
-  email: hongyus@amazon.com
+  email: ""
   location: Seattle, WA
   image: ""
   summary: Applied Scientist II at Amazon focused on agentic recommendation systems, agent fine-tuning, and large-scale low-latency personalization.
@@ -88,6 +88,10 @@ cv:
         level: Expert
         icon: fa-solid fa-brain
         keywords: "PyTorch, TensorFlow, AWS, Keras, Horovod, APEX, LangChain, PySpark, DGL"
+
+    Professional Service:
+      - bullet: "**Senior Program Committee Member**, AAAI Conference on Artificial Intelligence (AAAI), 2026"
+      - bullet: "**Reviewer**, Conference on Neural Information Processing Systems (NeurIPS), 2025, 2026"
 
     Awards:
       - title: 1st Prize, NCSA-NVIDIA AI Hackathon (Human Fall Detection)
