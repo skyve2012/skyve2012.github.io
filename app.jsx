@@ -78,7 +78,7 @@ function HomePage({ tweak, navigate }) {
                 <span>·</span>
                 <a href="/assets/pdf/CV_HS_2026.pdf" target="_blank" rel="noopener">cv ↗</a>
                 <span>·</span>
-                <a href="mailto:hello@hongyushen.com">email</a>
+                <a href="mailto:hongyushen21@gmail.com">email</a>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ function HomePage({ tweak, navigate }) {
             ))}
           </ul>
           <p className="interests__foot">
-            If any of this overlaps with what you're building, <a href="mailto:hello@hongyushen.com">say hi</a>.
+            If any of this overlaps with what you're building, <a href="mailto:hongyushen21@gmail.com">say hi</a>.
           </p>
         </Reveal>
       </section>
@@ -264,7 +264,7 @@ function PostPage({ id, navigate }) {
           </ul>
           <p>
             If something here resonates — or doesn't —
-            <a href="mailto:hello@hongyushen.com"> say hi</a>.
+            <a href="mailto:hongyushen21@gmail.com"> say hi</a>.
           </p>
         </div>
       </Reveal>

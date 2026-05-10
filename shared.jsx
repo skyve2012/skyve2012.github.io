@@ -245,6 +245,13 @@ const PUBS = [
 /* Projects framed around public/research work — nothing about the day job. */
 const PROJECTS = [
   {
+    title: "lightroom-py",
+    blurb: "Drive Adobe Lightroom Classic from Python — or a Claude agent. LR Classic has no AppleScript/COM/UXP, and its Lua plugin SDK is outbound-only, so this bolts on the missing automation surface: a tiny .lrplugin polls a local Python HTTP server, exposing 62 bridge handlers and 80 CLI verbs across catalog, develop, masks, and export. Includes verified end-to-end programmatic mask creation (a path documented elsewhere as impossible) and ships as a Claude agent skill + MCP server. pip install lightroom-py.",
+    tags: ["python", "lightroom", "agents", "tooling"],
+    placeholder: "62 handlers · 80 verbs",
+    href: "https://github.com/drshy-org/lightroom-py",
+  },
+  {
     title: "AutoAgentClaw",
     blurb: "Automatic multi-agent system optimization. Point it at an agent repo; it discovers what's tunable, researches techniques, and runs experiments. Verified +29.3% on HotpotQA.",
     tags: ["python", "agents", "optimization"],
@@ -263,14 +270,14 @@ const PROJECTS = [
     blurb: "Generalized Gaussian Mirror. A small but stubborn improvement on mirror statistics for feature selection. Companion to the NeurIPS 2025 paper.",
     tags: ["python", "inference"],
     placeholder: "diagram · mirror statistic",
-    href: "https://github.com/skyve2012",
+    href: "https://github.com/skyve2012/G2M",
   },
   {
     title: "gw-denoise",
     blurb: "Recurrent denoising autoencoders for gravitational-wave signals — a leftover from grad school that still gets cited and forked.",
     tags: ["torch", "signal"],
     placeholder: "spectrogram",
-    href: "https://github.com/skyve2012",
+    href: "https://github.com/skyve2012/DenoisingGW",
   },
 ];
 
