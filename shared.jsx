@@ -139,6 +139,7 @@ function Reveal({ children, delay = 0 }) {
 /* ────────────────── Data ────────────────── */
 /* Note: NEWS is intentionally personal — not work. The day-job lives elsewhere. */
 const NEWS = [
+  { date: "May 2026", tag: "release", body: "Shipped lightroom-py v0.6 — a Python library, CLI, and Claude agent skill for automating Adobe Lightroom Classic. First open driver with verified programmatic mask creation. pip install lightroom-py." },
   { date: "Apr 2026", tag: "site", body: "Quietly relaunched this site. New home for things outside the day job — reading notes, side projects, stray thoughts." },
   { date: "Dec 2025", tag: "paper", body: "G²M (Generalized Gaussian Mirror) accepted at NeurIPS 2025. Joint work with Zhizhen Zhao on boosting feature-selection power while keeping FDR control." },
   { date: "Dec 2024", tag: "paper", body: "AAAI 2025 paper on subpopulation-aware importance sampling for boosting test-time performance is up. Camera-ready in the proceedings." },
