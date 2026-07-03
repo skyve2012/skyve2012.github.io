@@ -143,7 +143,7 @@ function HomePage({ tweak, navigate }) {
           <a href="#writing" onClick={(e) => { e.preventDefault(); navigate("writing"); }}>all posts</a>
         </div>
         <Reveal>
-          <a className="lede-post" href={`#post/${POSTS[0].id}`} onClick={(e) => { e.preventDefault(); navigate(`post/${POSTS[0].id}`); }}>
+          <a className="lede-post" href={POSTS[0].href || `#post/${POSTS[0].id}`}>
             <p className="meta">{POSTS[0].date} · {POSTS[0].read} · {POSTS[0].tag}</p>
             <h3>{POSTS[0].title}</h3>
             <p>{POSTS[0].blurb}</p>
@@ -151,7 +151,7 @@ function HomePage({ tweak, navigate }) {
           <ul className="posts" style={{ marginTop: 0 }}>
             {POSTS.slice(1, 3).map((p) => (
               <li key={p.id}>
-                <a className="posts__item" href={`#post/${p.id}`} onClick={(e) => { e.preventDefault(); navigate(`post/${p.id}`); }}>
+                <a className="posts__item" href={p.href || `#post/${p.id}`}>
                   <span className="meta">{p.date} · {p.read} · {p.tag}</span>
                   <h3>{p.title}</h3>
                   <p>{p.blurb}</p>
@@ -189,19 +189,18 @@ function WritingPage({ navigate }) {
   return (
     <section className="block" style={{ paddingTop: 96, borderBottom: "none" }} data-screen-label="02 Writing">
       <Reveal>
-        <p className="eyebrow">Writing</p>
-        <h1 style={{ fontSize: "clamp(34px,5vw,46px)", marginBottom: 14 }}>Essays, notes, and things in progress.</h1>
+        <p className="eyebrow">Posts</p>
+        <h1 style={{ fontSize: "clamp(34px,5vw,46px)", marginBottom: 14 }}>Posts.</h1>
         <p style={{ color: "var(--fg-muted)", fontSize: 17, lineHeight: 1.6, maxWidth: "44ch", marginBottom: 36 }}>
-          Long pieces when an idea earns it; short notes when it doesn't. Mostly written
-          on weekend mornings. Subjects here are personal — research, side projects, reading,
-          and the occasional non-technical detour. Nothing here represents my employer.
+          Notes from learning how AI systems actually work, written down carefully
+          enough to share. Everything here is personal; nothing represents my employer.
         </p>
       </Reveal>
       <Reveal delay={80}>
         <ul className="posts">
           {POSTS.map((p) => (
             <li key={p.id}>
-              <a className="posts__item" href={`#post/${p.id}`} onClick={(e) => { e.preventDefault(); navigate(`post/${p.id}`); }}>
+              <a className="posts__item" href={p.href || `#post/${p.id}`}>
                 <span className="meta">{p.date} · {p.read} · {p.tag}</span>
                 <h3>{p.title}</h3>
                 <p>{p.blurb}</p>
@@ -217,6 +216,7 @@ function WritingPage({ navigate }) {
 /* ─────────────────── POST ─────────────────── */
 function PostPage({ id, navigate }) {
   const post = POSTS.find((p) => p.id === id) || POSTS[0];
+  if (post.href) { window.location.href = post.href; return null; }
   return (
     <article className="block" style={{ paddingTop: 80, borderBottom: "none" }} data-screen-label={`Post · ${post.title}`}>
       <Reveal>

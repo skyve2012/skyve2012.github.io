@@ -6,7 +6,7 @@ const { useState, useEffect, useRef } = React;
 function Nav({ current, onNav, theme, onToggleTheme }) {
   const items = [
     { id: "home", label: "home" },
-    { id: "writing", label: "writing" },
+    { id: "writing", label: "posts" },
     { id: "research", label: "research" },
     { id: "projects", label: "projects" },
     { id: "now", label: "now" },
@@ -139,6 +139,7 @@ function Reveal({ children, delay = 0 }) {
 /* ────────────────── Data ────────────────── */
 /* Note: NEWS is intentionally personal — not work. The day-job lives elsewhere. */
 const NEWS = [
+  { date: "Jul 2026", tag: "post", body: "Learning with Code #1: DiffusionGemma — a component-by-component teardown of the released model, traced to the shipped source. Full version at drshy.xyz/notes/diffusiongemma." },
   { date: "May 2026", tag: "release", body: "Shipped lightroom-py v0.6 — a Python library, CLI, and Claude agent skill for automating Adobe Lightroom Classic. First open driver with verified programmatic mask creation. pip install lightroom-py." },
   { date: "Apr 2026", tag: "site", body: "Quietly relaunched this site. New home for things outside the day job — reading notes, side projects, stray thoughts." },
   { date: "Dec 2025", tag: "paper", body: "G²M (Generalized Gaussian Mirror) accepted at NeurIPS 2025. Joint work with Zhizhen Zhao on boosting feature-selection power while keeping FDR control." },
@@ -149,44 +150,13 @@ const NEWS = [
 
 const POSTS = [
   {
-    id: "why-this-site",
-    date: "Apr 18, 2026",
-    read: "3 min",
-    tag: "note",
-    title: "Why I rebuilt this site",
-    blurb: "The old al-folio version did its job, but I wanted somewhere quieter to put the things I think about that aren't research papers.",
-  },
-  {
-    id: "knockoffs-intuition",
-    date: "Feb 11, 2026",
-    read: "10 min",
-    tag: "essay",
-    title: "A short, honest intuition for knockoff filters",
-    blurb: "Most introductions to knockoffs lean too hard on the math or too hard on the magic. Here's what I wish someone had told me on day one.",
-  },
-  {
-    id: "gw-leftovers",
-    date: "Nov 03, 2025",
-    read: "7 min",
-    tag: "long-read",
-    title: "Leftovers from a thesis on gravitational waves",
-    blurb: "Things I learned working on signal denoising and parameter estimation that I never got to put in a paper.",
-  },
-  {
-    id: "reading-2025",
-    date: "Sep 22, 2025",
-    read: "5 min",
-    tag: "reading",
-    title: "What I read in 2025 (so far)",
-    blurb: "A short list — books, papers, and one cookbook. Mostly outside ML on purpose.",
-  },
-  {
-    id: "seattle-notes",
-    date: "Jun 05, 2025",
-    read: "4 min",
-    tag: "life",
-    title: "Notes from a first year in Seattle",
-    blurb: "On rain, light, public transit, and the strange experience of moving from the Midwest to a city that disappears in fog.",
+    id: "diffusiongemma",
+    date: "Jul 03, 2026",
+    read: "40 min",
+    tag: "learning-with-code",
+    title: "Learning with Code: DiffusionGemma",
+    blurb: "A teardown of every component, straight from the source — RoPE, GQA, MoE, and the diffusion loop that writes 256 tokens at a time.",
+    href: "/notes/diffusiongemma/",
   },
 ];
 
