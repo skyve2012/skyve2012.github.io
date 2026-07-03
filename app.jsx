@@ -193,7 +193,7 @@ function WritingPage({ navigate }) {
         <h1 style={{ fontSize: "clamp(34px,5vw,46px)", marginBottom: 14 }}>Posts.</h1>
         <p style={{ color: "var(--fg-muted)", fontSize: 17, lineHeight: 1.6, maxWidth: "44ch", marginBottom: 36 }}>
           Notes from learning how AI systems actually work, written down carefully
-          enough to share. Everything here is personal; nothing represents my employer.
+          enough to share.
         </p>
       </Reveal>
       <Reveal delay={80}>
