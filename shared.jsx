@@ -105,8 +105,8 @@ function Placeholder({ label, hue = 35 }) {
 /* ────────────────── Avatar — Dr. Shy bunny portrait ────────────────── */
 function Avatar() {
   return (
-    <div className="hero__avatar" aria-label="Dr. Shy — cartoon bunny portrait">
-      <img src="assets/dr-shy.svg" alt="Dr. Shy bunny portrait" style={{ width: "100%", height: "100%", display: "block" }} />
+    <div className="hero__avatar" aria-label="Dr. Shy — cartoon portrait">
+      <img src="assets/dr-shy-avatar.png" alt="Dr. Shy cartoon portrait" style={{ width: "100%", height: "100%", display: "block", borderRadius: "50%" }} />
     </div>
   );
 }
