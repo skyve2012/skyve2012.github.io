@@ -70,15 +70,42 @@ function HomePage({ tweak, navigate }) {
                 Opinions here are entirely my own.
               </p>
               <div className="hero__links">
-                <a href="https://github.com/skyve2012" target="_blank" rel="noopener">github</a>
-                <span>·</span>
-                <a href="https://scholar.google.com/citations?user=CVCKr-EAAAAJ" target="_blank" rel="noopener">scholar</a>
-                <span>·</span>
-                <a href="https://orcid.org/0000-0001-7620-805X" target="_blank" rel="noopener">orcid</a>
-                <span>·</span>
-                <a href="/assets/pdf/CV_HS_2026.pdf" target="_blank" rel="noopener">cv ↗</a>
-                <span>·</span>
-                <a href="mailto:hongyushen21@gmail.com">email</a>
+                {[
+                  {
+                    label: "github", href: "https://github.com/skyve2012",
+                    d: "M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  },
+                  {
+                    label: "scholar", href: "https://scholar.google.com/citations?user=CVCKr-EAAAAJ",
+                    d: "M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.749-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"
+                  },
+                  {
+                    label: "orcid", href: "https://orcid.org/0000-0001-7620-805X",
+                    d: "M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"
+                  },
+                  {
+                    label: "substack", href: "https://hongyushen.substack.com",
+                    d: "M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"
+                  },
+                  {
+                    label: "cv", href: "/assets/pdf/CV_HS_2026.pdf",
+                    d: "M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+                  },
+                  {
+                    label: "email", href: "mailto:hongyushen21@gmail.com",
+                    d: "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                  },
+                ].map((l) => (
+                  <a
+                    key={l.label}
+                    href={l.href}
+                    target={l.href.startsWith("mailto:") ? undefined : "_blank"}
+                    rel="noopener"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d={l.d} /></svg>
+                    {l.label}
+                  </a>
+                ))}
               </div>
             </div>
           </div>

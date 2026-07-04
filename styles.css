@@ -340,9 +340,22 @@ p {
   color: var(--fg-muted);
   border: none;
   text-transform: lowercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.hero__links a svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  opacity: 0.75;
+  flex: none;
 }
 .hero__links a:hover {
   color: var(--accent);
+}
+.hero__links a:hover svg {
+  opacity: 1;
 }
 .hero__links span {
   color: var(--fg-faint);
