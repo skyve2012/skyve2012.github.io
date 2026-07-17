@@ -139,6 +139,7 @@ function Reveal({ children, delay = 0 }) {
 /* ────────────────── Data ────────────────── */
 /* Note: NEWS is intentionally personal — not work. The day-job lives elsewhere. */
 const NEWS = [
+  { date: "Jul 2026", tag: "post", body: "Learning with Code #2: Nemotron 3 — a teardown of NVIDIA's 550B hybrid: 48 Mamba-2 blocks, latent experts, 12 attention anchors, and a draft model riding in the checkpoint. Full version at drshy.xyz/notes/nemotron3." },
   { date: "Jul 2026", tag: "post", body: "Learning with Code #1: DiffusionGemma — a component-by-component teardown of the released model, traced to the shipped source. Full version at drshy.xyz/notes/diffusiongemma." },
   { date: "May 2026", tag: "release", body: "Shipped lightroom-py v0.6 — a Python library, CLI, and Claude agent skill for automating Adobe Lightroom Classic. First open driver with verified programmatic mask creation. pip install lightroom-py." },
   { date: "Apr 2026", tag: "site", body: "Quietly relaunched this site. New home for things outside the day job — reading notes, side projects, stray thoughts." },
@@ -149,6 +150,15 @@ const NEWS = [
 ];
 
 const POSTS = [
+  {
+    id: "nemotron3",
+    date: "Jul 15, 2026",
+    read: "45 min",
+    tag: "learning-with-code",
+    title: "Learning with Code: Nemotron 3",
+    blurb: "NVIDIA's 550B-A55B flagship, opened component by component — 48 Mamba-2 blocks, latent experts, 12 attention anchors, and the draft model riding in the checkpoint.",
+    href: "/notes/nemotron3/",
+  },
   {
     id: "diffusiongemma",
     date: "Jul 03, 2026",
