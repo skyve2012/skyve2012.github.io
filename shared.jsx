@@ -139,6 +139,7 @@ function Reveal({ children, delay = 0 }) {
 /* ────────────────── Data ────────────────── */
 /* Note: NEWS is intentionally personal — not work. The day-job lives elsewhere. */
 const NEWS = [
+  { date: "Jul 2026", tag: "post", body: "Learning with Maps #1: Nobody Hands Out the Roles — one question through two research eras: where does division of labor come from when nobody assigns it? Full version at drshy.xyz/notes/division-of-labor." },
   { date: "Jul 2026", tag: "post", body: "Learning with Code #2: Nemotron 3 — a teardown of NVIDIA's 550B hybrid: 48 Mamba-2 blocks, latent experts, 12 attention anchors, and a draft model riding in the checkpoint. Full version at drshy.xyz/notes/nemotron3." },
   { date: "Jul 2026", tag: "post", body: "Learning with Code #1: DiffusionGemma — a component-by-component teardown of the released model, traced to the shipped source. Full version at drshy.xyz/notes/diffusiongemma." },
   { date: "May 2026", tag: "release", body: "Shipped lightroom-py v0.6 — a Python library, CLI, and Claude agent skill for automating Adobe Lightroom Classic. First open driver with verified programmatic mask creation. pip install lightroom-py." },
@@ -150,6 +151,15 @@ const NEWS = [
 ];
 
 const POSTS = [
+  {
+    id: "division-of-labor",
+    date: "Jul 19, 2026",
+    read: "50 min",
+    tag: "learning-with-maps",
+    title: "Learning with Maps: Nobody Hands Out the Roles",
+    blurb: "Where does division of labor come from when no one assigns the roles? Five years of MARL and three years of LLM agents, walked as one question — latent roles, carved menus, trained orchestrators, and the four signals that would settle it.",
+    href: "/notes/division-of-labor/",
+  },
   {
     id: "nemotron3",
     date: "Jul 15, 2026",
