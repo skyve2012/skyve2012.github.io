@@ -139,6 +139,7 @@ function Reveal({ children, delay = 0 }) {
 /* ────────────────── Data ────────────────── */
 /* Note: NEWS is intentionally personal — not work. The day-job lives elsewhere. */
 const NEWS = [
+  { date: "Aug 2026", tag: "post", body: "Learning with Maps #2: Can You Search for an Org Chart? — the automated-design camp mapped through one axis: when the team's structure gets fixed. Full version at drshy.xyz/notes/searching-the-org-chart." },
   { date: "Jul 2026", tag: "post", body: "Learning with Maps #1: Nobody Hands Out the Roles — one question through two research eras: where does division of labor come from when nobody assigns it? Full version at drshy.xyz/notes/division-of-labor." },
   { date: "Jul 2026", tag: "post", body: "Learning with Code #2: Nemotron 3 — a teardown of NVIDIA's 550B hybrid: 48 Mamba-2 blocks, latent experts, 12 attention anchors, and a draft model riding in the checkpoint. Full version at drshy.xyz/notes/nemotron3." },
   { date: "Jul 2026", tag: "post", body: "Learning with Code #1: DiffusionGemma — a component-by-component teardown of the released model, traced to the shipped source. Full version at drshy.xyz/notes/diffusiongemma." },
@@ -151,6 +152,15 @@ const NEWS = [
 ];
 
 const POSTS = [
+  {
+    id: "searching-the-org-chart",
+    date: "Aug 16, 2026",
+    read: "50 min",
+    tag: "learning-with-maps",
+    title: "Learning with Maps: Can You Search for an Org Chart?",
+    blurb: "The automated-design camp of LLM multi-agent systems, mapped through one axis — when the team's structure gets fixed. Two years, three orals, a clock that only moves later, and a search that ends by dissolving its own target.",
+    href: "/notes/searching-the-org-chart/",
+  },
   {
     id: "division-of-labor",
     date: "Jul 19, 2026",
