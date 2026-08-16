@@ -405,7 +405,7 @@ function</strong> — performance, cost, latency, safety.</p>
 optimization problem, and its notation is worth adopting for the whole
 post:</p>
 <p><span class="math display">\[
-W^{*} = \arg\max_{W \in \mathcal{S}}\ G(W, T)
+W^{\ast} = \arg\max_{W \in \mathcal{S}}\ G(W, T)
 \]</span></p>
 <p><span class="math inline">\(W\)</span> is a candidate workflow — in
 AFlow's definition, a set of LLM-invoking nodes (each carrying a model,
@@ -416,8 +416,8 @@ representable workflows; <span class="math inline">\(T\)</span> is the
 task; <span class="math inline">\(G\)</span> is the evaluation function
 — run the workflow, score the result. The org chart is <span
 class="math inline">\(W\)</span>. The camp's founding claim is that
-<span class="math inline">\(W^{*}\)</span> found by machine beats <span
-class="math inline">\(W\)</span> written by hand.</p>
+<span class="math inline">\(W^{\ast}\)</span> found by machine beats
+<span class="math inline">\(W\)</span> written by hand.</p>
 <p>But the equation hides the distinction that, in hindsight, organizes
 the camp's entire development. Ask: <strong>when is <span
 class="math inline">\(W\)</span> fixed?</strong> ADAS's three axes say
@@ -427,11 +427,11 @@ time</strong> of the structure. The framing is mine, not any paper's —
 ADAS's formulation names the space, the algorithm, and the evaluator,
 and stops there. It is the axis the camp actually moved along:</p>
 <p><span class="math display">\[
-W^{*} = \arg\max_{W}\ G(W,T)
+W^{\ast} = \arg\max_{W}\ G(W,T)
 \quad\longrightarrow\quad
-\mathbb{P}^{*}(W \mid q)
+\mathbb{P}^{\ast}(W \mid q)
 \quad\longrightarrow\quad
-\pi^{*}(W_t \mid s_t)
+\pi^{\ast}(W_t \mid s_t)
 \]</span></p>
 <p>Read left to right: first the chart is a frozen artifact, searched
 once against a validation set and deployed (GPTSwarm, ADAS, AFlow —
@@ -523,7 +523,7 @@ graphs, tuned by REINFORCE (the classic policy-gradient estimator — the
 <span class="math inline">\(\nabla\log p\)</span> update GRPO later
 descends from) against measured task utility:</p>
 <p><span class="math display">\[
-\theta^{*} = \arg\max_{\theta \in \Theta}\ \mathbb{E}_{G \sim
+\theta^{\ast} = \arg\max_{\theta \in \Theta}\ \mathbb{E}_{G \sim
 D_{\theta}}\left[ u_{\tau}(G) \right]
 \]</span></p>
 <p><span class="math display">\[
