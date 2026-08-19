@@ -139,6 +139,7 @@ function Reveal({ children, delay = 0 }) {
 /* ────────────────── Data ────────────────── */
 /* Note: NEWS is intentionally personal — not work. The day-job lives elsewhere. */
 const NEWS = [
+  { date: "Aug 2026", tag: "post", body: "Learning with Maps #3: Old Words, New Objects — a field report from OSDI 2026: an entire track of LLM systems papers, read through one lens. The OS vocabulary held; the objects changed. Full version at drshy.xyz/notes/osdi26." },
   { date: "Aug 2026", tag: "post", body: "Learning with Maps #2: Can You Search for an Org Chart? — the automated-design camp mapped through one axis: when the team's structure gets fixed. Full version at drshy.xyz/notes/searching-the-org-chart." },
   { date: "Jul 2026", tag: "post", body: "Learning with Maps #1: Nobody Hands Out the Roles — one question through two research eras: where does division of labor come from when nobody assigns it? Full version at drshy.xyz/notes/division-of-labor." },
   { date: "Jul 2026", tag: "post", body: "Learning with Code #2: Nemotron 3 — a teardown of NVIDIA's 550B hybrid: 48 Mamba-2 blocks, latent experts, 12 attention anchors, and a draft model riding in the checkpoint. Full version at drshy.xyz/notes/nemotron3." },
@@ -152,6 +153,15 @@ const NEWS = [
 ];
 
 const POSTS = [
+  {
+    id: "osdi26",
+    date: "Aug 18, 2026",
+    read: "45 min",
+    tag: "learning-with-maps",
+    title: "Learning with Maps: Old Words, New Objects",
+    blurb: "A field report from OSDI 2026 — the year the oldest systems conference gave an entire track to LLM systems. 48 papers walked through one lens: paging, time-sharing, checksums, and admission control all survived; their objects changed. Plus a glossary of every borrowed word.",
+    href: "/notes/osdi26/",
+  },
   {
     id: "searching-the-org-chart",
     date: "Aug 16, 2026",
