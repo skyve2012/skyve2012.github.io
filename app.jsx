@@ -307,8 +307,12 @@ function ResearchPage() {
         <p className="eyebrow">Research</p>
         <h1 style={{ fontSize: "clamp(34px,5vw,46px)", marginBottom: 14 }}>Selected publications.</h1>
         <p style={{ color: "var(--fg-muted)", fontSize: 17, lineHeight: 1.6, maxWidth: "44ch", marginBottom: 36 }}>
-          Recommendation systems, agentic AI, statistical inference, and a previous life in
-          gravitational-wave signal processing. Full list on <a href="#">Google Scholar</a>.
+          Agentic AI, statistical inference, recommendation systems, and a previous life in
+          gravitational-wave signal processing. Full list on <a href="https://scholar.google.com/citations?user=CVCKr-EAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+        <p style={{ color: "var(--fg-muted)", fontSize: 15, lineHeight: 1.6, maxWidth: "44ch", marginBottom: 36 }}>
+          Senior Program Committee for AAAI; reviewer for NeurIPS and KDD. Reviewing areas:
+          feature selection, interpretable AI, domain generalization, and multi-agent systems.
         </p>
       </Reveal>
       <Reveal delay={80}>
